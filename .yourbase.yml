@@ -1,0 +1,13 @@
+dependencies:
+  build:
+    - python:3.6.3
+
+build_targets:
+  - name: default
+    commands:
+      - python prospecting.py
+
+ci:
+  builds:
+    - name: default
+      build_target: default
